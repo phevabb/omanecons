@@ -2,96 +2,225 @@
 {% load static %}
 {% block content %}
 
-
-
 <!-- Main Content -->
 <div id="main-content" class="site-main clearfix">
     <div id="content-wrap">
         <div id="site-content" class="site-content clearfix">
             <div id="inner-content" class="inner-content-wrap">
                 <div class="page-content">
+
                     <section class="wprt-section">
                         <div class="container">
+                            <!-- Spacer -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="wprt-spacer" data-desktop="40" data-mobi="30" data-smobi="30"></div>
+                                </div>
+                            </div>
+
+                            <!-- 1. CORE ENGINEERING SERVICES -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2 class="category-title">Core Engineering Services</h2>
+                                    <div class="wprt-spacer" data-desktop="25" data-mobi="25" data-smobi="25"></div>
+                                </div>
+
+                                <!-- Architectural Design -->
+                                <div class="col-md-4">
+                                    <div class="service-item clearfix">
+                                        <div class="thumb"><img src="{% static 'assets/img/services/1__.jpeg' %}" alt="Architectural Design"></div>
+                                        <div class="service-item-wrap">
+                                            <h3 class="title font-size-18"><a href="#">Architectural Design & 3D Modeling</a></h3>
+                                            <p class="desc">Comprehensive building design solutions, including detailed architectural planning and realistic 3D models.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Road Construction -->
+                                <div class="col-md-4">
+                                    <div class="service-item clearfix">
+                                        <div class="thumb"><img src="{% static 'assets/img/services/2_.jpeg' %}" alt="Road Construction"></div>
+                                        <div class="service-item-wrap">
+                                            <h3 class="title font-size-18"><a href="#">Road & Civil Construction</a></h3>
+                                            <p class="desc">End-to-end construction of roads, buildings, and civil infrastructure for government and commercial clients.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Quantity Surveying -->
+                                <div class="col-md-4">
+                                    <div class="service-item clearfix">
+                                        <div class="thumb"><img src="{% static 'assets/img/services/3_.jpg' %}" alt="Quantity Surveying"></div>
+                                        <div class="service-item-wrap">
+                                            <h3 class="title font-size-18"><a href="#">Quantity Surveying</a></h3>
+                                            <p class="desc">Accurate cost planning, estimation, and budgeting for construction projects across all scales.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Spacer between categories -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="wprt-spacer" data-desktop="60" data-mobi="40" data-smobi="40"></div>
+                                </div>
+                            </div>
+
+                            <!-- 2. TELECOMMUNICATION SERVICES -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2 class="category-title">Telecommunication Services</h2>
+                                    <div class="wprt-spacer" data-desktop="25" data-mobi="25" data-smobi="25"></div>
+                                </div>
+
+                                <!-- Tower Fabrication -->
+                                <div class="col-md-4">
+                                    <div class="service-item clearfix">
+                                        <div class="thumb"><img src="{% static 'assets/img/services/4_.jpg' %}" alt="Tower Fabrication"></div>
+                                        <div class="service-item-wrap">
+                                            <h3 class="title font-size-18"><a href="#">Tower Fabrication & Installation</a></h3>
+                                            <p class="desc">Design, fabrication, and erection of telecom towers, rooftop poles, guy masts, monopoles, and accessories.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- GSM Cell Site -->
+                                <div class="col-md-4">
+                                    <div class="service-item clearfix">
+                                        <div class="thumb"><img src="{% static 'assets/img/services/5_.jpg' %}" alt="GSM Cell Site"></div>
+                                        <div class="service-item-wrap">
+                                            <h3 class="title font-size-18"><a href="#">GSM Cell Site Construction</a></h3>
+                                            <p class="desc">Full site builds for telecom companies, including fencing, grounding, shelters, street cabinets, and testing.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Telecom Power -->
+                                <div class="col-md-4">
+                                    <div class="service-item clearfix">
+                                        <div class="thumb"><img src="{% static 'assets/img/services/6_.jpg' %}" alt="Telecom Power"></div>
+                                        <div class="service-item-wrap">
+                                            <h3 class="title font-size-18"><a href="#">Telecom Power & UPS Systems</a></h3>
+                                            <p class="desc">Installation of telecom room power setups, including UPS, BBS systems, internal grounding, and aviation hazard lights.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Spacer between categories -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="wprt-spacer" data-desktop="60" data-mobi="40" data-smobi="40"></div>
+                                </div>
+                            </div>
+
+                            <!-- 3. WORKSHOP & FABRICATION -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2 class="category-title">Workshop & Fabrication</h2>
+                                    <div class="wprt-spacer" data-desktop="25" data-mobi="25" data-smobi="25"></div>
+                                </div>
+
+                                <!-- Engineering Workshop -->
+                                <div class="col-md-4">
+                                    <div class="service-item clearfix">
+                                        <div class="thumb"><img src="{% static 'assets/img/services/7_.jpg' %}" alt="Workshop Services"></div>
+                                        <div class="service-item-wrap">
+                                            <h3 class="title font-size-18"><a href="#">Engineering Workshop Services</a></h3>
+                                            <p class="desc">Machining, gear cutting, drilling, polishing, and fabrication of tanks, vessels, machine parts, and custom components.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- General Fabrication -->
+                                <div class="col-md-4">
+                                    <div class="service-item clearfix">
+                                        <div class="thumb"><img src="{% static 'assets/img/services/8_.jpg' %}" alt="Fabrication"></div>
+                                        <div class="service-item-wrap">
+                                            <h3 class="title font-size-18"><a href="#">Fabrication & Utility Structures</a></h3>
+                                            <p class="desc">Formworks, utility frames, general steel structures, and customized components for industrial and telecom use.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Machine Services -->
+                                <div class="col-md-4">
+                                    <div class="service-item clearfix">
+                                        <div class="thumb"><img src="{% static 'assets/img/services/1__.jpeg' %}" alt="Industrial Machines"></div>
+                                        <div class="service-item-wrap">
+                                            <h3 class="title font-size-18"><a href="#">Industrial Machine Services</a></h3>
+                                            <p class="desc">Repair, installation, and support for heavy industrial machines and factory equipment across Ghana.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Spacer between categories -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="wprt-spacer" data-desktop="60" data-mobi="40" data-smobi="40"></div>
+                                </div>
+                            </div>
+
+                            <!-- 4. SUPPORT SERVICES -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2 class="category-title">Support Services</h2>
+                                    <div class="wprt-spacer" data-desktop="25" data-mobi="25" data-smobi="25"></div>
+                                </div>
+
+                                <!-- Generator Services -->
+                                <div class="col-md-4">
+                                    <div class="service-item clearfix">
+                                        <div class="thumb"><img src="{% static 'assets/img/services/2_.jpeg' %}" alt="Generator Services"></div>
+                                        <div class="service-item-wrap">
+                                            <h3 class="title font-size-18"><a href="#">Generator Services & Technical Support</a></h3>
+                                            <p class="desc">Sales, maintenance, and repair of generators, plus plumbing and general technical problem resolution for clients.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Structured Cabling -->
+                                <div class="col-md-4">
+                                    <div class="service-item clearfix">
+                                        <div class="thumb"><img src="{% static 'assets/img/services/3_.jpg' %}" alt="Structured Cabling"></div>
+                                        <div class="service-item-wrap">
+                                            <h3 class="title font-size-18"><a href="#">Structured Cabling Design</a></h3>
+                                            <p class="desc">Underground cable installations, outside plant works, aerial cabling, jointing, and full telecom infrastructure builds.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Site Security -->
+                                <div class="col-md-4">
+                                    <div class="service-item clearfix">
+                                        <div class="thumb"><img src="{% static 'assets/img/services/4_.jpg' %}" alt="Security"></div>
+                                        <div class="service-item-wrap">
+                                            <h3 class="title font-size-18"><a href="#">Site Security Services</a></h3>
+                                            <p class="desc">Provision of professional on-site security solutions tailored for engineering sites and telecom installations.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Closing Spacer -->
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="wprt-spacer" data-desktop="80" data-mobi="60" data-smobi="60"></div>
-                                </div><!-- /.col-md-12 -->
-
-                                <div class="col-md-4">
-
-                                    <div class="service-item clearfix">
-                                        <div class="thumb"><img src="{% static 'assets/img/services/4.jpg' %}" alt="image" /></div>
-                                        <div class="service-item-wrap">
-                                            <h3 class="title font-size-18"><a href="#">Construction Consultant</a></h3>
-                                            <p class="desc">Nulla iaculis turpis in nibh aliquam maximus. In dignissim arcu vel diam scelerisque, pretium urna </p>
-                                            <a href="#" class="wprt-button small rounded-3px">READ MORE</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="wprt-spacer" data-desktop="55" data-mobi="40" data-smobi="40"></div>
-
-                                    <div class="service-item clearfix">
-                                        <div class="thumb"><img src="{% static 'assets/img/services/1.jpg' %}" alt="image" /></div>
-                                        <div class="service-item-wrap">
-                                            <h3 class="title font-size-18"><a href="#">Design & Construction</a></h3>
-                                            <p class="desc">Nulla iaculis turpis in nibh aliquam maximus. In dignissim arcu vel diam scelerisque, pretium urna </p>
-                                            <a href="#" class="wprt-button small rounded-3px">READ MORE</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="wprt-spacer" data-desktop="0" data-mobi="40" data-smobi="40"></div>
-                                </div><!-- /.col-md-4 -->
-
-                                <div class="col-md-4">
-                                    <div class="service-item clearfix">
-                                        <div class="thumb"><img src="{% static 'assets/img/services/5.jpg' %}" alt="image" /></div>
-                                        <div class="service-item-wrap">
-                                            <h3 class="title font-size-18"><a href="#">Resconstruction Services</a></h3>
-                                            <p class="desc">Nulla iaculis turpis in nibh aliquam maximus. In dignissim arcu vel diam scelerisque, pretium urna </p>
-                                            <a href="#" class="wprt-button small rounded-3px">READ MORE</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="wprt-spacer" data-desktop="55" data-mobi="40" data-smobi="40"></div>
-
-                                    <div class="service-item clearfix">
-                                        <div class="thumb"><img src="{% static 'assets/img/services/2.jpg' %}" alt="image" /></div>
-                                        <div class="service-item-wrap">
-                                            <h3 class="title font-size-18"><a href="#">The Green Building</a></h3>
-                                            <p class="desc">Nulla iaculis turpis in nibh aliquam maximus. In dignissim arcu vel diam scelerisque, pretium urna </p>
-                                            <a href="#" class="wprt-button small rounded-3px">READ MORE</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="wprt-spacer" data-desktop="0" data-mobi="40" data-smobi="40"></div>
-                                </div><!-- /.col-md-4 -->
-
-                                <div class="col-md-4">
-                                    <div class="service-item clearfix">
-                                        <div class="thumb"><img src="{% static 'assets/img/services/6.jpg' %}" alt="image" /></div>
-                                        <div class="service-item-wrap">
-                                            <h3 class="title font-size-18"><a href="#">Architectural Design</a></h3>
-                                            <p class="desc">Nulla iaculis turpis in nibh aliquam maximus. In dignissim arcu vel diam scelerisque, pretium urna </p>
-                                            <a href="#" class="wprt-button small rounded-3px">READ MORE</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="wprt-spacer" data-desktop="55" data-mobi="40" data-smobi="40"></div>
-
-                                    <div class="service-item clearfix">
-                                        <div class="thumb"><img src="{% static 'assets/img/services/3.jpg' %}" alt="image" /></div>
-                                        <div class="service-item-wrap">
-                                            <h3 class="title font-size-18"><a href="#">House Renovation</a></h3>
-                                            <p class="desc">Nulla iaculis turpis in nibh aliquam maximus. In dignissim arcu vel diam scelerisque, pretium urna </p>
-                                            <a href="#" class="wprt-button small rounded-3px">READ MORE</a>
-                                        </div>
-                                    </div>
-                                </div><!-- /.col-md-4 -->
-
-                                <div class="col-md-12">
-                                    <div class="wprt-spacer" data-desktop="80" data-mobi="60" data-smobi="60"></div>
-                                </div><!-- /.col-md-12 -->
-                            </div><!-- /.row -->
+                                </div>
+                            </div>
                         </div><!-- /.container -->
                     </section>
 
