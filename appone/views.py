@@ -19,3 +19,12 @@ def contact(request):
 
 def project(request):
     return render(request, 'project.html')
+
+def logistics(request):
+    return render(request, 'logistic.html')
+
+def engine(request):
+    return render(request, 'engine.html')
+
+def handyman(request):
+    return render(request, 'handyman.html')

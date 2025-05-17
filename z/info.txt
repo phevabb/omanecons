@@ -43,7 +43,7 @@ Quotes from satisfi
 -------------------------------------
 time they work
 social handels
-email
+email support@kkagroup.com
 remove maps
 check name on images
 a link to company terms / policy docs etc
@@ -55,3 +55,4 @@ ceo images on about use
 more pics of services
 images of complete projects
 work on contact form
+more under each unit in index to link to service
