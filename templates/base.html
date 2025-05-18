@@ -308,7 +308,7 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>KKA - GROUP</title>
+    <title>{% block title %}KKA - GROUP{% endblock %}</title>
     <meta name="description" content="Construction Company">
     <meta name="keywords" content=" architecture, builder, building, building company,  construction, construction business, construction company, Road">
     <meta name="author" content="blogwp.com">
@@ -403,9 +403,7 @@
     </div>
 </li>
 
-        <li class="menu-item {% if request.resolver_match.url_name == 'project' %}current-menu-item{% endif %}">
-            <a href="{% url 'project' %}">Projects</a>
-        </li>
+
         <li class="menu-item {% if request.resolver_match.url_name == 'contact' %}current-menu-item{% endif %}">
             <a href="{% url 'contact' %}">Contact Us</a>
         </li>
@@ -433,7 +431,11 @@
                     <h2 class="widget-title"><span>ABOUT US</span></h2>
                     <div class="textwidget">
                         <img src="{% static 'assets/img/kka.png' %}" width="200" height="30" alt="KKA Logo" class="margin-top-5 margin-bottom-25" />
-                        <p>At K.K.A Engineering, construction is more than a service — it's a commitment to excellence. We bring passion, precision, and skilled professionals together to transform ideas into quality-built realities that exceed expectations.</p>
+                        <p>K.K.A Group as a mother company strives to provide Government, Commercial and
+                            Residential property owners a total structural and civil engineering solutions,
+                            from Road Construction to fixing
+                            technical problems from Plumbing to Generator servicing with a prompt customer
+                            service response.</p>
                     </div>
                 </div>
             </div>
