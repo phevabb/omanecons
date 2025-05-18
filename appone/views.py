@@ -28,3 +28,7 @@ def engine(request):
 
 def handyman(request):
     return render(request, 'handyman.html')
+
+
+def index2(request):
+    return render(request, 'index2.html')

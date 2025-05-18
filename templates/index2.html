@@ -1,0 +1,482 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<!-- Hero Background SlideShow -->
+<div id="hero-section" data-number="3"  data-image-1="{% static 'assets/img/projects/2.jpg' %}" data-image-2="{% static 'assets/img/projects/3.jpg' %}" data-image-3="{% static 'assets/img/projects/4.jpg' %}" data-effect="fade">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <div class="hero-title scroll" data-min="28px" data-max="80px">
+            <h1>ONE COMPNAY</h1>
+            <h1>THREE DIVISONS</h1>
+            <h1>INFINITE POTENTIAL</h1>
+        </div>
+
+        <div class="hero-text">
+            <p class="font-weight-600 letter-spacing-1px">EXCELLENCE IN CONSTRUCITON <span class="text-accent-color">SINCE 1981</span></p>
+        </div>
+
+        <a class="arrow-2 bounce scroll-target" href="#services-section"><span class="fa fa-angle-down"></span></a><!-- change href value to ID of section you want to scroll down -->
+    </div><!-- /.hero-content -->
+</div>
+
+<!-- Main Content -->
+<div id="main-content" class="site-main clearfix">
+    <div id="content-wrap">
+        <div id="site-content" class="site-content clearfix">
+            <div id="inner-content" class="inner-content-wrap">
+                <div class="page-content">
+
+                    <!-- DIVISION -->
+                    <section id="divisions-section" class="wprt-section divisions">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                	<div class="wprt-spacer" data-desktop="0" data-mobi="60" data-smobi="60"></div>
+
+                                    <div class="wprt-content-box style-1">
+                                        <div class="wprt-icon-box icon-effect-2 icon-left">
+                                            <div class="icon-wrap">
+
+                                                <span class="dd-icon">
+                                                    <img src="{% static 'assets/img/1_engine.png' %}" alt="K.K.A Engineering Logo" class="custom-logo" />
+                                                </span>
+
+                                            </div>
+                                            <div class="content-wrap">
+                                                <h3 class="dd-title text-white font-size-19"><a href="{% url 'engine' %}">K.K.A ENGINEERING</a></h3>
+                                                <div class="dd-link"><a href="{% url 'engine' %}">READ MORE</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /.col-md-4 -->
+
+                                <div class="col-md-4">
+                                	<div class="wprt-spacer" data-desktop="0" data-mobi="30" data-smobi="30"></div>
+
+                                    <div class="wprt-content-box style-1">
+                                        <div class="wprt-icon-box icon-effect-2 icon-left">
+
+
+                                            <div class="icon-wrap">
+                                                <span class="dd-icon">
+                                                    <img src="{% static 'assets/img/2_logistics.png' %}" alt="K.K.A Logistics Logo" class="custom-logo" />
+                                                </span>
+                                            </div>
+
+
+                                            <div class="content-wrap">
+                                                <h3 class="dd-title text-white font-size-19"><a href="{% url 'logistics' %}">K.K.A LOGISTICS</a></h3>
+                                                <div class="dd-link"><a href="{% url 'logistics' %}">READ MORE</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /.col-md-4 -->
+
+                                <div class="col-md-4">
+                                	<div class="wprt-spacer" data-desktop="0" data-mobi="30" data-smobi="30"></div>
+
+                                    <div class="wprt-content-box style-1">
+                                        <div class="wprt-icon-box icon-effect-2 icon-left">
+                                            <div class="icon-wrap">
+                                                <<div class="icon-wrap">
+                                                <span class="dd-icon">
+                                                    <img src="{% static 'assets/img/original_.png' %}" alt="K.K.A Logistics Logo" class="custom-logo" />
+                                                </span>
+                                            </div>
+                                            </div>
+                                            <div class="content-wrap">
+                                                <h3 class="dd-title text-white font-size-19"><a href="{% url 'handyman' %}">K.K.A's HANDYMAN</a></h3>
+                                                <div class="dd-link"><a href="{% url 'handyman' %}">READ MORE</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wprt-spacer" data-desktop="0" data-mobi="60" data-smobi="60"></div>
+                                </div><!-- /.col-md-4 -->
+                            </div>
+                        </div>
+                    </section>
+
+                     <!-- OFFER -->
+                    <section id="features" class="wprt-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="wprt-spacer" data-desktop="70" data-mobi="60" data-smobi="60"></div>
+                                    <h2 class="text-center margin-bottom-10">WHAT WE OFFER</h2>
+                                    <div class="wprt-lines style-2 custom-1">
+                                        <div class="line-1"></div>
+                                    </div>
+
+                                    <div class="wprt-spacer" data-desktop="50" data-mobi="40" data-smobi="40"></div>
+                                </div><!-- /.col-md-12 -->
+
+                                <div class="col-md-4">
+                                    <div class="wprt-icon-box outline icon-effect-3 icon-left">
+                                        <div class="icon-wrap font-size-45">
+                                            <span class="dd-icon icon-o-paint-roller"></span>
+                                        </div>
+                                        <div class="content-wrap">
+                                            <h3 class="dd-title font-size-18"><a href="#">Prepair Services</a></h3>
+                                            <p>Vestibulum eu libero volutpat, portas quam, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl.</p>
+                                            <div class="dd-link dark"><a href="#">READ MORE</a></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wprt-spacer" data-desktop="45" data-mobi="30" data-smobi="30"></div>
+
+                                    <div class="wprt-icon-box outline icon-effect-3 icon-left">
+                                        <div class="icon-wrap font-size-35">
+                                            <span class="dd-icon icon-o-electricity"></span>
+                                        </div>
+                                        <div class="content-wrap">
+                                            <h3 class="dd-title font-size-18"><a href="#">Electrical Systems</a></h3>
+                                            <p>Vestibulum eu libero volutpat, portas quam, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl.</p>
+                                            <div class="dd-link dark"><a href="#">READ MORE</a></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wprt-spacer" data-desktop="0" data-mobi="30" data-smobi="30"></div>
+                                </div><!-- /.col-md-4 -->
+
+                                <div class="col-md-4">
+                                    <div class="wprt-icon-box outline icon-effect-3 icon-left">
+                                        <div class="icon-wrap font-size-35">
+                                            <span class="dd-icon icon-o-drawing-1"></span>
+                                        </div>
+                                        <div class="content-wrap">
+                                            <h3 class="dd-title font-size-18"><a href="#">Architectural Design</a></h3>
+                                            <p>Vestibulum eu libero volutpat, portas quam, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl.</p>
+                                            <div class="dd-link dark"><a href="#">READ MORE</a></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wprt-spacer" data-desktop="45" data-mobi="30" data-smobi="30"></div>
+
+                                    <div class="wprt-icon-box outline icon-effect-3 icon-left">
+                                        <div class="icon-wrap font-size-35">
+                                            <span class="dd-icon icon-o-roof"></span>
+                                        </div>
+                                        <div class="content-wrap">
+                                            <h3 class="dd-title font-size-18"><a href="#">Metal Roofing</a></h3>
+                                            <p>Vestibulum eu libero volutpat, portas quam, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl.</p>
+                                            <div class="dd-link dark"><a href="#">READ MORE</a></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wprt-spacer" data-desktop="0" data-mobi="30" data-smobi="30"></div>
+                                </div><!-- /.col-md-4 -->
+
+                                <div class="col-md-4">
+                                    <div class="wprt-icon-box outline icon-effect-3 icon-left">
+                                        <div class="icon-wrap font-size-35">
+                                            <span class="dd-icon icon-o-tiles"></span>
+                                        </div>
+                                        <div class="content-wrap">
+                                            <h3 class="dd-title font-size-18"><a href="#">Green Building</a></h3>
+                                            <p>Vestibulum eu libero volutpat, portas quam, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl.</p>
+                                            <div class="dd-link dark"><a href="#">READ MORE</a></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wprt-spacer" data-desktop="45" data-mobi="30" data-smobi="30"></div>
+
+                                    <div class="wprt-icon-box outline icon-effect-3 icon-left">
+                                        <div class="icon-wrap font-size-35">
+                                            <span class="dd-icon icon-o-parquet"></span>
+                                        </div>
+                                        <div class="content-wrap">
+                                            <h3 class="dd-title font-size-18"><a href="#">Laminate Flooring</a></h3>
+                                            <p>Vestibulum eu libero volutpat, portas quam, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl.</p>
+                                            <div class="dd-link dark"><a href="#">READ MORE</a></div>
+                                        </div>
+                                    </div>
+                                </div><!-- /.col-md-4 -->
+
+                                <div class="col-md-12">
+                                    <div class="wprt-spacer" data-desktop="80" data-mobi="60" data-smobi="50"></div>
+                                </div><!-- /.col-md-12 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </section>
+
+                    <!-- WORKS -->
+                    <section class="wprt-section works parallax">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="wprt-spacer" data-desktop="70" data-mobi="60" data-smobi="60"></div>
+                                    <h2 class="text-left text-white">FEATURED WORK</h2>
+                                    <div class="wprt-lines custom-2">
+                                        <div class="line-1"></div>
+                                    </div>
+                                    <div class="wprt-spacer" data-desktop="50" data-mobi="40" data-smobi="40"></div>
+                                </div><!-- /.col-md-12 -->
+
+                                <div class="col-md-12">
+                                    <div class="wprt-project arrow-style-2 has-arrows arrow60 arrow-dark" data-layout="slider" data-column="3" data-column2="3" data-column3="2" data-column4="1" data-gaph="30" data-gapv="30">
+                                        <div id="projects" class="cbp">
+
+
+                                            <div class="cbp-item">
+                                                <div class="project-item">
+                                                    <div class="inner">
+                                                        <div class="grid">
+                                                        <figure class="effect-sadie">
+                                                            <img src="{% static 'assets/img/projects/1.jpg' %}" alt="image" />
+                                                            <figcaption>
+                                                                <div>
+                                                                    <h2><a target="_blank" href="#">Tower</a></h2>
+                                                                    <p>Construction</p>
+                                                                </div>
+                                                            </figcaption>
+                                                        </figure>
+                                                        </div>
+
+                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/img/projects/1.jpg' %}" data-title="Telecom Tower">
+                                                            <i class="fa fa-arrows-alt"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div><!--/.cbp-item -->
+
+                                            <div class="cbp-item">
+                                                <div class="project-item">
+                                                    <div class="inner">
+                                                        <div class="grid">
+                                                        <figure class="effect-sadie">
+                                                            <img src="{% static 'assets/img/projects/2.jpg' %}" alt="image" />
+                                                            <figcaption>
+                                                                <div>
+                                                                    <h2><a target="_blank" href="#">Tower</a></h2>
+                                                                    <p>Construction</p>
+                                                                </div>
+                                                            </figcaption>
+                                                        </figure>
+                                                        </div>
+
+                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/img/projects/2.jpg' %}" data-title="Telecom Tower">
+                                                            <i class="fa fa-arrows-alt"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div><!--/.cbp-item -->
+
+                                            <div class="cbp-item">
+                                                <div class="project-item">
+                                                    <div class="inner">
+                                                        <div class="grid">
+                                                        <figure class="effect-sadie">
+                                                            <img src="{% static 'assets/img/projects/3.jpg' %}" alt="image" />
+                                                            <figcaption>
+                                                                <div>
+                                                                    <h2><a target="_blank" href="#">Tower</a></h2>
+                                                                    <p>Construction</p>
+                                                                </div>
+                                                            </figcaption>
+                                                        </figure>
+                                                        </div>
+
+                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/img/projects/3.jpg' %}" data-title="Telecom Tower">
+                                                            <i class="fa fa-arrows-alt"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div><!--/.cbp-item -->
+
+                                            <div class="cbp-item">
+                                                <div class="project-item">
+                                                    <div class="inner">
+                                                        <div class="grid">
+                                                        <figure class="effect-sadie">
+                                                            <img src="{% static 'assets/img/projects/4_.jpg' %}" alt="image" />
+                                                            <figcaption>
+                                                                <div>
+                                                                    <h2><a target="_blank" href="#">Tower</a></h2>
+                                                                    <p>Construction</p>
+                                                                </div>
+                                                            </figcaption>
+                                                        </figure>
+                                                        </div>
+
+                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/img/projects/4_.jpg' %}" data-title="Telecom Tower">
+                                                            <i class="fa fa-arrows-alt"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div><!--/.cbp-item -->
+
+                                            <div class="cbp-item">
+                                                <div class="project-item">
+                                                    <div class="inner">
+                                                        <div class="grid">
+                                                        <figure class="effect-sadie">
+                                                            <img src="{% static 'assets/img/projects/5_.jpg' %}" alt="image" />
+                                                            <figcaption>
+                                                                <div>
+                                                                    <h2><a target="_blank" href="#">Tower</a></h2>
+                                                                    <p>Construction</p>
+                                                                </div>
+                                                            </figcaption>
+                                                        </figure>
+                                                        </div>
+
+                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/img/projects/5_.jpg' %}" data-title="Telecom Tower">
+                                                            <i class="fa fa-arrows-alt"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div><!--/.cbp-item -->
+
+                                            <div class="cbp-item">
+                                                <div class="project-item">
+                                                    <div class="inner">
+                                                        <div class="grid">
+                                                        <figure class="effect-sadie">
+                                                            <img src="{% static 'assets/img/projects/6.jpg' %}" alt="image" />
+                                                            <figcaption>
+                                                                <div>
+                                                                    <h2><a target="_blank" href="#">Tower</a></h2>
+                                                                    <p>Construction</p>
+                                                                </div>
+                                                            </figcaption>
+                                                        </figure>
+                                                        </div>
+
+                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/img/projects/6.jpg' %}" data-title="Telecom Tower">
+                                                            <i class="fa fa-arrows-alt"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div><!--/.cbp-item -->
+
+                                            <div class="cbp-item">
+                                                <div class="project-item">
+                                                    <div class="inner">
+                                                        <div class="grid">
+                                                        <figure class="effect-sadie">
+                                                            <img src="{% static 'assets/img/projects/7.jpg' %}" alt="image" />
+                                                            <figcaption>
+                                                                <div>
+                                                                    <h2><a target="_blank" href="#">Tower</a></h2>
+                                                                    <p>Construction</p>
+                                                                </div>
+                                                            </figcaption>
+                                                        </figure>
+                                                        </div>
+
+                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/img/projects/7.jpg' %}" data-title="Telecom Tower">
+                                                            <i class="fa fa-arrows-alt"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div><!--/.cbp-item -->
+
+                                            <div class="cbp-item">
+                                                <div class="project-item">
+                                                    <div class="inner">
+                                                        <div class="grid">
+                                                        <figure class="effect-sadie">
+                                                            <img src="{% static 'assets/img/projects/8.jpg' %}" alt="image" />
+                                                            <figcaption>
+                                                                <div>
+                                                                    <h2><a target="_blank" href="#">Tower</a></h2>
+                                                                    <p>Construction</p>
+                                                                </div>
+                                                            </figcaption>
+                                                        </figure>
+                                                        </div>
+
+                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/img/projects/8.jpg' %}" data-title="Telecom Tower">
+                                                            <i class="fa fa-arrows-alt"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div><!--/.cbp-item -->
+
+
+                                        </div><!-- /#projects -->
+                                    </div><!--/.wprt-project -->
+                                </div><!-- /.col-md-12 -->
+
+                                <div class="col-md-12">
+                                    <div class="wprt-spacer" data-desktop="80" data-mobi="60" data-smobi="60"></div>
+                                </div><!-- /.col-md-12 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </section>
+
+                    <!-- WHY CHOOSE US -->
+                    <section class="wprt-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="wprt-spacer" data-desktop="70" data-mobi="60" data-smobi="60"></div>
+                                    <h2>WHY CHOOSE US?</h2>
+                                    <div class="wprt-lines style-1 custom-3">
+                                        <div class="line-1"></div>
+                                        <div class="line-2"></div>
+                                    </div>
+                                    <div class="wprt-spacer" data-desktop="50" data-mobi="40" data-smobi="40"></div>
+
+                                    <div class="wprt-toggle style-1">
+                                        <h3 class="toggle-title">A Decade of Proven Experience</h3>
+                                        <div class="toggle-content">
+                                            Since 2014, K.K.A has built a solid reputation for delivering reliable, high-quality engineering and construction services. With nearly a decade of hands-on experience, we've successfully executed projects across public, private, and commercial sectors, earning the trust of clients through commitment, innovation, and excellence.
+                                        </div>
+                                    </div>
+
+                                    <div class="wprt-toggle active style-1">
+                                        <h3 class="toggle-title">Our Commitment Goes Beyond Completion</h3>
+                                        <div class="toggle-content">
+                                            At K.K.A, we believe a successful project is not just about delivery. It's about lasting performance. That’s why we offer ongoing support, maintenance, and expert guidance even after the project ends, ensuring long-term value and client satisfaction.
+                                        </div>
+
+                                    </div>
+
+                                    <div class="wprt-toggle style-1">
+                                        <h3 class="toggle-title">Leveraging Technology for Efficient Project Delivery</h3>
+                                        <div class="toggle-content">
+                                            At K.K.A, we integrate modern tools and technology into our workflows to improve speed, accuracy, and efficiency. From digital design and 3D modeling to advanced construction equipment, our tech-driven approach ensures timely and cost-effective project completion without compromising on quality.
+                                        </div>
+
+                                    </div>
+
+                                    <div class="wprt-toggle style-1">
+                                        <h3 class="toggle-title">Prioritizing Safety Through Continuous Training</h3>
+                                        <div class="toggle-content">
+                                            At K.K.A, safety is at the core of everything we do. Our employees undergo regular training to stay updated on the latest safety standards and practices. This ensures a secure working environment, reduces risks, and promotes a culture of responsibility on every project site.
+                                        </div>
+
+                                    </div>
+                                </div><!-- /.col-md-6 -->
+
+
+
+                                <div class="col-md-12">
+                                    <div class="wprt-spacer" data-desktop="70" data-mobi="60" data-smobi="60"></div>
+                                </div><!-- /.col-md-12 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </section>
+
+
+                    <!-- FACTS -->
+
+
+
+                </div><!-- /.page-content -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+
+

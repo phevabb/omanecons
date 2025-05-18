@@ -56,4 +56,5 @@ more pics of services
 images of complete projects
 work on contact form
 more under each unit in index to link to service
-delete project.html lataer
+contacts work on 
+pics and descriptions
