@@ -90,23 +90,49 @@
   display: none;
 }
 
-/* Small screens only */
-@media (max-width: 767px) {
-  .margin-small-engine {
-    display: block;
-    margin-top: 3rem;
-  }
-}
-
 /* Large screens only */
 @media (min-width: 768px) {
   .margin-large-engine {
     display: block;
-    margin-top: 12rem;
+    margin-top: 5rem;
   }
 }
 /* end engines */
 /* -------------------------- */
+
+/* logistics */
+/* Default: hide both */
+.margin-small-logistics,
+.margin-large-logistics {
+  display: none;
+}
+
+/* Large screens only */
+@media (min-width: 768px) {
+  .margin-large-logistics {
+    display: block;
+    margin-top: 5rem;
+  }
+}
+/* end engines */
+/* -------------------------- */
+/* handyman */
+/* Default: hide both */
+.margin-small-handyman,
+.margin-large-handyman {
+  display: none;
+}
+
+/* Large screens only */
+@media (min-width: 768px) {
+  .margin-large-handyman {
+    display: block;
+    margin-top: 5rem;
+  }
+}
+/* end engines */
+/* -------------------------- */
+
 
 
 
@@ -508,7 +534,7 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>Home | K.K.A GROUP</title>
+    <title>{% block title %}Home | K.K.A GROUP{% endblock %}</title>
     <meta name="description" content="Template built for Construction Company, Building Services, Architecture, Engineering, Cleaning Service and other Construction related services">
     <meta name="keywords" content=" architecture, builder, building, building company, cleaning services, construction, construction business, construction company">
     <meta name="author" content="blogwp.com">

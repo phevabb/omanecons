@@ -15,7 +15,7 @@
         </div>
 
         <div class="hero-text">
-            <p class="font-weight-600 letter-spacing-1px">EXCELLENCE IN CONSTRUCITON <span class="text-accent-color">SINCE 1981</span></p>
+            <p class="font-weight-600 letter-spacing-1px">EXCELLENCE IN CONSTRUCITON <span class="text-accent-color">SINCE 2014</span></p>
         </div>
 
         <a class="arrow-2 bounce scroll-target" href="#services-section"><span class="fa fa-angle-down"></span></a><!-- change href value to ID of section you want to scroll down -->
@@ -41,7 +41,11 @@
                                             <div class="icon-wrap">
 
                                                 <span class="dd-icon">
-                                                    <img src="{% static 'assets/img/1_engine.png' %}" alt="K.K.A Engineering Logo" class="custom-logo" />
+
+                                                   <a href="{% url 'engine' %}">
+                                                      <img src="{% static 'assets/img/1_engine.png' %}" alt="K.K.A Engineering Logo" class="custom-logo" />
+                                                  </a>
+
                                                 </span>
 
                                             </div>
