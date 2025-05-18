@@ -3,7 +3,7 @@
 {% load static %}
 {% block content %}
 
-
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-+VYOg8J9QdqFV5H+XZQaEwLwD4/0uj1Xr4IGC3TSxCJpgdMCAnvlQqUahnbxYz38ZtE7umX6Y7Ahl8cMZlZ9XQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- Slider -->
@@ -33,6 +33,7 @@
                     data-splitout="none"
                     data-responsive_offset="on">
                     K.K.A GROUP OF COMPANIES
+                    <br>
                 </div>
                 <div class="sfb tp-caption tp-resizeme text-white text-shadow text-center"
                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -52,7 +53,9 @@
                     data-splitout="none"
                     data-responsive_offset="on"
                     data-lasttriggerstate="reset">
-                    <h2 class="responsive-heading">Seamless Construction. <br> Minimal Disruption.</h2>
+                    <div style="margin-top: 4rem"></div>
+                    <h2 class=" responsive-heading">  Seamless Construction. <br> Minimal Disruption.</h2>
+
 
                 </div>
                 <div class="sfb tp-caption"
@@ -115,7 +118,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="wprt-spacer" data-desktop="70" data-mobi="60" data-smobi="60"></div>
-                                    <h2 class="text-center margin-bottom-10">MAIN SERVICES</h2>
+                                    <h2 class="text-center mb-10 font-bold">MAIN SERVICES</h2>
                                     <div class="wprt-lines style-2 custom-1">
                                         <div class="line-1"></div>
                                     </div>
@@ -133,7 +136,7 @@
                                         </div>
 
                                         <div class="content-wrap">
-                                            <h3 class="dd-title font-size-18"><a href="{% url 'engine' %}">K.K.A ENG. GHANA LIMITED</a></h3>
+                                            <h3 class="dd-title font-size-18 mb-10 font-bold "><a href="{% url 'engine' %}">K.K.A ENG. GHANA LIMITED</a></h3>
                                             <p style="text-align: left;" >K.K.A Engi.
                                                 Company Limited is the arm of the company that provides professional and
                                                 detailed engineering services that includes the beneath;
@@ -187,7 +190,7 @@
 
 
                                         <div class="content-wrap">
-                                            <h3 class="dd-title font-size-18"><a href="{% url 'logistics' %}">K.K.A Logistics</a></h3>
+                                            <h3 class="dd-title font-size-18 mb-10 font-bold"><a href="{% url 'logistics' %}">K.K.A LOGISTICS</a></h3>
                                             <p style="text-align: left;">
                                                     K.K.A Logistics is the engineering solutions, engineering accessories and the supply chain arm of the company.
                                                     Our services ranges from hot dip galvanization of steel materials, tower painting, maintenance on towers/site, general fabrications utility, formworks, construction of tower foundations for installation of communications, power transmission towers, supply of towers/accessories, supply of chemical anchor and its end to end project management.
@@ -207,13 +210,17 @@
                                 <!--handyman -->
                                 <div class="col-md-4">
                                     <div class="wprt-icon-box accent-background rounded icon-effect-2 icon-left">
-                                        <div class="icon-wrap">
+
+                                         <div class="icon-wrap">
                                             <span class="dd-icon">
-                                                <img src="{% static 'assets/img/3_handyman.png' %}" alt="KKA Handyman Logo" class="custom-logo" />
+                                                <img src="{% static 'assets/img/3_handyman.png' %}" alt="KKA Engineering Logo" class="custom-logo" />
                                             </span>
                                         </div>
+
+
+
                                         <div class="content-wrap">
-                                            <h3 class="dd-title font-size-18"><a href="{% url 'handyman' %}">K.K.A HANDYMAN</a></h3>
+                                            <h3 class="dd-title font-size-18 mb-10 font-bold"><a href="{% url 'handyman' %}">K.K.A HANDYMAN</a></h3>
                                             <p>
                                                 Mr. Handyman services provides commercial and private
                                                 residential property owners/tenants with basic and advance
@@ -252,12 +259,14 @@
                                 <div class="col-md-12">
                                     <div class="wprt-project arrow-style-2 has-arrows arrow60 arrow-dark" data-layout="slider" data-column="3" data-column2="3" data-column3="2" data-column4="1" data-gaph="30" data-gapv="30">
                                         <div id="projects" class="cbp">
+
+
                                             <div class="cbp-item">
                                                 <div class="project-item">
                                                     <div class="inner">
                                                         <div class="grid">
                                                         <figure class="effect-sadie">
-                                                            <img src="{% static 'assets/img/projects/1__.jpeg' %}" alt="image" />
+                                                            <img src="{% static 'assets/img/projects/1.jpg' %}" alt="image" />
                                                             <figcaption>
                                                                 <div>
                                                                     <h2><a target="_blank" href="#">Tower</a></h2>
@@ -267,7 +276,7 @@
                                                         </figure>
                                                         </div>
 
-                                                        <a class="project-zoom cbp-lightbox" href="#" data-title="Telecom Tower">
+                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/img/projects/1.jpg' %}" data-title="Telecom Tower">
                                                             <i class="fa fa-arrows-alt"></i>
                                                         </a>
                                                     </div>
@@ -277,17 +286,19 @@
                                             <div class="cbp-item">
                                                 <div class="project-item">
                                                     <div class="inner">
-                                                        <figure class="effect-honey">
-                                                            <img src="{% static 'assets/img/projects/2_.jpeg' %}" alt="image" />
+                                                        <div class="grid">
+                                                        <figure class="effect-sadie">
+                                                            <img src="{% static 'assets/img/projects/2.jpg' %}" alt="image" />
                                                             <figcaption>
                                                                 <div>
-                                                                    <h2><a target="_blank" href="#">Com Tower</a></h2>
+                                                                    <h2><a target="_blank" href="#">Tower</a></h2>
                                                                     <p>Construction</p>
                                                                 </div>
                                                             </figcaption>
                                                         </figure>
+                                                        </div>
 
-                                                        <a class="project-zoom cbp-lightbox" href="#" data-title="LUXURY BUILDINGS">
+                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/img/projects/2.jpg' %}" data-title="Telecom Tower">
                                                             <i class="fa fa-arrows-alt"></i>
                                                         </a>
                                                     </div>
@@ -297,17 +308,19 @@
                                             <div class="cbp-item">
                                                 <div class="project-item">
                                                     <div class="inner">
-                                                        <figure class="effect-zoe">
-                                                            <img src="{% static 'assets/img/projects/3_.jpg' %}" alt="image" />
+                                                        <div class="grid">
+                                                        <figure class="effect-sadie">
+                                                            <img src="{% static 'assets/img/projects/3.jpg' %}" alt="image" />
                                                             <figcaption>
                                                                 <div>
-                                                                    <h2><a target="_blank" href="#">Electrical Eng.</a></h2>
+                                                                    <h2><a target="_blank" href="#">Tower</a></h2>
                                                                     <p>Construction</p>
                                                                 </div>
                                                             </figcaption>
                                                         </figure>
+                                                        </div>
 
-                                                        <a class="project-zoom cbp-lightbox" href="#" data-title="Electrical Eng.">
+                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/img/projects/3.jpg' %}" data-title="Telecom Tower">
                                                             <i class="fa fa-arrows-alt"></i>
                                                         </a>
                                                     </div>
@@ -317,17 +330,19 @@
                                             <div class="cbp-item">
                                                 <div class="project-item">
                                                     <div class="inner">
+                                                        <div class="grid">
                                                         <figure class="effect-sadie">
                                                             <img src="{% static 'assets/img/projects/4_.jpg' %}" alt="image" />
                                                             <figcaption>
                                                                 <div>
-                                                                    <h2><a target="_blank" href="#">Civil Eng.</a></h2>
+                                                                    <h2><a target="_blank" href="#">Tower</a></h2>
                                                                     <p>Construction</p>
                                                                 </div>
                                                             </figcaption>
                                                         </figure>
+                                                        </div>
 
-                                                        <a class="project-zoom cbp-lightbox" href="#" data-title="Tower">
+                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/img/projects/4_.jpg' %}" data-title="Telecom Tower">
                                                             <i class="fa fa-arrows-alt"></i>
                                                         </a>
                                                     </div>
@@ -337,7 +352,8 @@
                                             <div class="cbp-item">
                                                 <div class="project-item">
                                                     <div class="inner">
-                                                        <figure class="effect-oscar">
+                                                        <div class="grid">
+                                                        <figure class="effect-sadie">
                                                             <img src="{% static 'assets/img/projects/5_.jpg' %}" alt="image" />
                                                             <figcaption>
                                                                 <div>
@@ -346,8 +362,9 @@
                                                                 </div>
                                                             </figcaption>
                                                         </figure>
+                                                        </div>
 
-                                                        <a class="project-zoom cbp-lightbox" href="#" data-title="Tower">
+                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/img/projects/5_.jpg' %}" data-title="Telecom Tower">
                                                             <i class="fa fa-arrows-alt"></i>
                                                         </a>
                                                     </div>
@@ -357,62 +374,70 @@
                                             <div class="cbp-item">
                                                 <div class="project-item">
                                                     <div class="inner">
-                                                        <figure class="effect-zoe">
-                                                            <img src="{% static 'assets/img/projects/6_.jpg' %}" alt="image" />
-                                                            <figcaption>
-                                                                <div>
-                                                                    <h2><a target="_blank" href="#">Building</a></h2>
-                                                                    <p>Construction</p>
-                                                                </div>
-                                                            </figcaption>
-                                                        </figure>
-
-                                                        <a class="project-zoom cbp-lightbox" href="#" data-title="BUILDING">
-                                                            <i class="fa fa-arrows-alt"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div><!--/.cbp-item -->
-
-                                            <div class="cbp-item">
-                                                <div class="project-item">
-                                                    <div class="inner">
-                                                        <figure class="effect-oscar">
-                                                            <img src="{% static 'assets/img/projects/7_.jpg' %}" alt="image" />
-                                                            <figcaption>
-                                                                <div>
-                                                                    <h2><a target="_blank" href="#">Constructions</a></h2>
-                                                                    <p>Construction</p>
-                                                                </div>
-                                                            </figcaption>
-                                                        </figure>
-
-                                                        <a class="project-zoom cbp-lightbox" href="#" data-title="Construction">
-                                                            <i class="fa fa-arrows-alt"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div><!--/.cbp-item -->
-
-                                            <div class="cbp-item">
-                                                <div class="project-item">
-                                                    <div class="inner">
+                                                        <div class="grid">
                                                         <figure class="effect-sadie">
-                                                            <img src="{% static 'assets/img/projects/8_.jpg' %}" alt="image" />
+                                                            <img src="{% static 'assets/img/projects/6.jpg' %}" alt="image" />
                                                             <figcaption>
                                                                 <div>
-                                                                    <h2><a target="_blank" href="#">Comm. Tower</a></h2>
+                                                                    <h2><a target="_blank" href="#">Tower</a></h2>
                                                                     <p>Construction</p>
                                                                 </div>
                                                             </figcaption>
                                                         </figure>
+                                                        </div>
 
-                                                        <a class="project-zoom cbp-lightbox" href="#" data-title="Tower">
+                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/img/projects/6.jpg' %}" data-title="Telecom Tower">
                                                             <i class="fa fa-arrows-alt"></i>
                                                         </a>
                                                     </div>
                                                 </div>
                                             </div><!--/.cbp-item -->
+
+                                            <div class="cbp-item">
+                                                <div class="project-item">
+                                                    <div class="inner">
+                                                        <div class="grid">
+                                                        <figure class="effect-sadie">
+                                                            <img src="{% static 'assets/img/projects/7.jpg' %}" alt="image" />
+                                                            <figcaption>
+                                                                <div>
+                                                                    <h2><a target="_blank" href="#">Tower</a></h2>
+                                                                    <p>Construction</p>
+                                                                </div>
+                                                            </figcaption>
+                                                        </figure>
+                                                        </div>
+
+                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/img/projects/7.jpg' %}" data-title="Telecom Tower">
+                                                            <i class="fa fa-arrows-alt"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div><!--/.cbp-item -->
+
+                                            <div class="cbp-item">
+                                                <div class="project-item">
+                                                    <div class="inner">
+                                                        <div class="grid">
+                                                        <figure class="effect-sadie">
+                                                            <img src="{% static 'assets/img/projects/8.jpg' %}" alt="image" />
+                                                            <figcaption>
+                                                                <div>
+                                                                    <h2><a target="_blank" href="#">Tower</a></h2>
+                                                                    <p>Construction</p>
+                                                                </div>
+                                                            </figcaption>
+                                                        </figure>
+                                                        </div>
+
+                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/img/projects/8.jpg' %}" data-title="Telecom Tower">
+                                                            <i class="fa fa-arrows-alt"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div><!--/.cbp-item -->
+
+
                                         </div><!-- /#projects -->
                                     </div><!--/.wprt-project -->
                                 </div><!-- /.col-md-12 -->
@@ -482,7 +507,7 @@
                                         <div id="wprt-slider" class="flexslider">
                                             <ul class="slides">
                                                 <li class="flex-active-slide">
-                                                    <a class="zoom" href="#"><i class="fa fa-arrows-alt"></i></a>
+                                                    <a class="zoom" href="{% static 'assets/img/gallery/1_.jpg' %}"><i class="fa fa-arrows-alt"></i></a>
                                                     <img src="{% static 'assets/img/gallery/1_.jpg' %}" alt="image" />
                                                 </li>
 
