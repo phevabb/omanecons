@@ -2,6 +2,7 @@
 {% block title %}Contact | KKA - GROUP{% endblock %}
 {% load static %}
 {% block content %}
+    {% load widget_tweaks %}
 
 
 <div class="margin-small-contact"></div>
@@ -48,28 +49,33 @@
 
 			                    <div class="col-md-8">
 			                    	<h4 class="margin-bottom-15">GET IN TOUCH WITH US</h4>
-									<form action="https://themes247.net/html5/construction-template/demo/includes/contact/contact-process.php" method="post" class="contact-form wpcf7-form">
-										<div class="wprt-contact-form-1">
-											<span class="wpcf7-form-control-wrap name">
-												<input type="text" tabindex="1" id="name" name="name" value="" class="wpcf7-form-control" placeholder="Name *" required>
-											</span>
-											<span class="wpcf7-form-control-wrap email">
-												<input type="email" tabindex="2" id="email" name="email" value="" class="wpcf7-form-control" placeholder="E-mail *" required>
-											</span>
-											<span class="wpcf7-form-control-wrap phone">
-												<input type="text" tabindex="3" id="phone" name="phone" value="" class="wpcf7-form-control" placeholder="Phone Number">
-											</span>
-											<span class="wpcf7-form-control-wrap subject">
-												<input type="text" tabindex="4" id="subject" name="subject" value="" class="wpcf7-form-control" placeholder="Subject *" required>
-											</span>
-											<span class="wpcf7-form-control-wrap message">
-												<textarea name="message" tabindex="5" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" placeholder="Message" required></textarea>
-											</span>
-											<div class="wrap-submit">
-												<input type="submit" value="SEND MESSAGE" class="submit wpcf7-form-control wpcf7-submit" id="submit" name="submit">
-											</div>
-										</div>
-									</form>
+
+
+									<form method="post" class="contact-form">
+    {% csrf_token %}
+    <div class="wprt-contact-form-1">
+        <span class="form-group">
+            {% render_field form.name class="form-control" placeholder="Your Name" %}
+        </span>
+        <span class="form-group">
+            {% render_field form.email class="form-control" placeholder="Your Email" %}
+        </span>
+        <span class="form-group">
+            {% render_field form.phone class="form-control" placeholder="Your Phone" %}
+        </span>
+        <span class="form-group">
+            {% render_field form.subject class="form-control" placeholder="Subject" %}
+        </span>
+        <span class="form-group">
+            {% render_field form.message class="form-control" placeholder="Message" %}
+        </span>
+        <div class="wrap-submit">
+            <input type="submit" value="SEND MESSAGE" class="btn btn-primary">
+        </div>
+    </div>
+</form>
+
+
 			                    </div><!-- /.col-md-8 -->
 
                                 <div class="col-md-12">

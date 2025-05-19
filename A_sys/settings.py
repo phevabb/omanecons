@@ -39,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # third party
+    'widget_tweaks',
+
+
     #local
     'appone.apps.ApponeConfig'
 ]
@@ -128,3 +132,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_HOST_USER = "phevab1@gmail.com"
+EMAIL_HOST_PASSWORD = "pxoniqqxstkmnjmi"
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+
+
