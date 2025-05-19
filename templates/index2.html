@@ -5,7 +5,7 @@
 
 
 <!-- Hero Background SlideShow -->
-<div id="hero-section" data-number="3"  data-image-1="{% static 'assets/img/projects/2.jpg' %}" data-image-2="{% static 'assets/img/projects/3.jpg' %}" data-image-3="{% static 'assets/img/projects/4.jpg' %}" data-effect="fade">
+<div id="hero-section" data-number="3"  data-image-1="{% static 'assets/img/projects/2.jpg' %}" data-image-2="{% static 'assets/img/projects/3.jpg' %}" data-image-3="{% static 'assets/img/projects/4_.jpg' %}" data-effect="fade">
     <div class="overlay"></div>
     <div class="hero-content">
         <div class="hero-title scroll" data-min="28px" data-max="80px">
@@ -66,7 +66,10 @@
 
                                             <div class="icon-wrap">
                                                 <span class="dd-icon">
-                                                    <img src="{% static 'assets/img/2_logistics.png' %}" alt="K.K.A Logistics Logo" class="custom-logo" />
+
+                                                    <a href="{% url 'logistics' %}">
+                                                      <img src="{% static 'assets/img/2_logistics.png' %}" alt="K.K.A Logistics Logo" class="custom-logo" />
+                                                  </a>
                                                 </span>
                                             </div>
 
@@ -87,7 +90,10 @@
                                             <div class="icon-wrap">
                                                 <<div class="icon-wrap">
                                                 <span class="dd-icon">
-                                                    <img src="{% static 'assets/img/original_.png' %}" alt="K.K.A Logistics Logo" class="custom-logo" />
+
+                                                    <a href="{% url 'handyman' %}">
+                                                      <img src="{% static 'assets/img/3_handyman_edit.png' %}" alt="K.K.A's handyman Logo" class="custom-logo" />
+                                                  </a>
                                                 </span>
                                             </div>
                                             </div>

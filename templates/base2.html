@@ -679,7 +679,16 @@
                     <h2 class="widget-title"><span>COMPANY LINKS</span></h2>
                     <ul class="footer-links">
                         <li><a href="{% url 'index' %}">Home</a></li>
-                        <li><a href="{% url 'service' %}">Services</a></li>
+                        <li class="menu-item {% if request.resolver_match.url_name == 'service' %}current-menu-item{% endif %} has-submenu dropdown">
+    <a href="{% url 'service' %}" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Services
+    </a>
+    <div class="dropdown-menu dropdown-menu-center-mobile">
+        <a class="dropdown-item" href="{% url 'engine' %}">KKA Engineering</a>
+        <a class="dropdown-item" href="{% url 'logistics' %}">KKA Logistics</a>
+        <a class="dropdown-item" href="{% url 'handyman' %}">KKA Handyman</a>
+    </div>
+</li>
                         <li><a href="{% url 'about' %}">About Us</a></li>
                         <li><a href="{% url 'project' %}">Projects</a></li>
                         <li><a href="{% url 'contact' %}">Contact</a></li>
