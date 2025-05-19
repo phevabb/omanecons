@@ -11,6 +11,70 @@
 
     <style>
 
+        /* ---------for logistics ------- */
+        /* Base mobile styles */
+.service-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.card-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.card-text.small {
+    font-size: 0.75rem;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .service-logo {
+        width: 50px;
+        height: 50px;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+    .card-text.small {
+        font-size: 0.8rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .service-logo {
+        width: 60px;
+        height: 60px;
+    }
+    .card-title {
+        font-size: 1.1rem;
+    }
+    .card-text.small {
+        font-size: 0.85rem;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .service-logo {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* Hover effects */
+.service-card {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+}
+/* ---------end  for logistics ------- */
+
 
 /* -------------------------- */
 /* contacts */
@@ -92,13 +156,32 @@
   display: none;
 }
 
+/* jeeeez */
+@media (max-width: 576px) {
+    .shift-left-sm {
+        text-align: left !important;
+    }
+}
+
 /* Large screens only */
 @media (min-width: 768px) {
   .margin-large-engine {
+
     display: block;
-    margin-top: 5rem;
+    margin-top: 9rem;
+
   }
 }
+
+/* Small screens only */
+@media (max-width: 767px) {
+  .margin-small-engine {
+    display: block;
+    margin-top: 3rem;
+  }
+}
+
+
 /* end engines */
 /* -------------------------- */
 
