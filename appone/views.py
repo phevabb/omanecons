@@ -42,22 +42,8 @@ def contact(request):
     return render(request, 'contact.html', {'form': form})
 
 
-
-# Create your views here.
-def index(request):
-    return render(request, 'index.html')
-
-
 def about(request):
     return render(request, 'about.html')
-
-
-def service(request):
-    return render(request, 'service.html')
-
-
-
-
 
 def project(request):
     return render(request, 'project.html')
@@ -74,3 +60,15 @@ def handyman(request):
 
 def index2(request):
     return render(request, 'index2.html')
+
+
+def enginepics(request):
+    return render(request, 'enginepics.html')
+
+
+def handymanpics(request):
+    return render(request, 'handymanpics.html')
+
+
+def logisticpics(request):
+    return render(request, 'logisticpics.html')

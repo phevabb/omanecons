@@ -10,28 +10,42 @@
         <!-- Hero Banner -->
         <section class="hero-banner position-relative">
             <div class="hero-overlay"></div>
-            <div class="container position-relative z-index-1 py-5">
-                <div class="row justify-content-center text-center py-5">
+            <div class="container position-relative z-index-1 ">
+                <div class="row justify-content-center text-center ">
                     <div class="col-lg-8">
                         <h2 class="text-center font-size-28 margin-bottom-10">K.K.A's HANDYMAN</h2>
                                     <div class="wprt-lines style-2 custom-1">
                                         <div class="line-1"></div>
                                     </div>
 <div style="margin-top: 2rem" ></div>
-                       <p class="lead text-white-75 mb-5 animate__animated animate__fadeIn animate__delay-1s">
-                           Mr. Handyman services provides commercial and private residential property owners/tenants with
-                            basic and advance handyman services at a low rate. We repair and install all basic
-                            construction services as depicted and explained beneath.
-                            KKA Group’s Mr. Handyman arm of the company has over the years provided these basic engineering services to
-                            customers whose details can be found in our clientele section of this brief.
-                            </p>
+                       <div class="handyman-description animate__animated animate__fadeIn animate__delay-1s">
+    <p>
+        Mr. Handyman Services provides commercial and private residential property owners/tenants with basic and advanced handyman services at a low rate. We repair and install all basic construction services including:
+    </p>
 
-                              <!-- Replace the button with this logo container -->
-                        <div class="logo-frame-container animate__animated animate__fadeInUp animate__delay-1s">
-                            <div class="logo-frame">
-                                <img src="{% static 'assets/img/handyman/3_handyman.png' %}" alt="Handyman Logo" class="logo-img">
-                            </div>
-                        </div>
+    <ul class="handyman-list">
+    <li>Electrical Services</li>
+    <li>Carpentry Services</li>
+    <li>Plumbing Services</li>
+    <li>Fumigation Services</li>
+    <li>Tiling and Painting</li>
+    <li>Air-condition Services</li>
+</ul>
+
+
+    <p>
+        KKA Group’s Mr. Handyman arm of the company has over the years provided
+        these basic engineering services to customers.
+    </p>
+
+
+
+    <p>
+        We are your trusted partner for quality workmanship and timely service.
+    </p>
+</div>
+
+
 
 
                     </div>
@@ -39,86 +53,127 @@
             </div>
         </section>
 
+          <!--     Replace the button with this logo container -->
+                        <div class="logo-frame-container">
+                            <div class="logo-frame">
+                                <img src="{% static 'assets/img/handyman/3_handyman.png' %}" alt="Handyman Logo" class="logo-img">
+                            </div>
+                        </div>
+<div style="margin-top: 2rem"></div>
         <!-- Services Section -->
         <section id="services" class="py-5">
             <div class="container">
 
-                <!-- 0. top logo -->
-                        <div class="row mb-5">
+                <!-- 0. top logos -->
+                 <div class="row mb-5 justify-content-center">
 
-                            <!-- top logo -->
-                            <div class="col-12 text-center mb-5">
-                                <h2 class="section-title">Services</h2>
-                                <div class="divider mx-auto"></div>
-                            </div>
+    <!-- Section Header - Bigger Text -->
+    <div class="col-12 text-center ">
+        <h2 class="section-title" style="font-size: 2.5rem;">Our Services</h2> <!-- Larger heading -->
+        <div class="divider mx-auto"></div>
+    </div>
 
-                            <!-- logos -->
-                             <div class="row g-2 g-md-3 g-lg-4">
-                        <!-- Haulage Card -->
-                        <div class="col-6 col-md-3">
-                            <div class="card service-card shadow-sm border-0 text-center h-100">
-                                <div class="card-body p-2 p-sm-3 p-lg-4">
-                                    <img src="{% static 'assets/img/handyman/electric.png' %}" class="service-logo mb-2 mb-md-3" alt="Haulage logo">
-                                    <h6 class="card-title mb-1 mb-md-2">Electrical Works</h6>
-                                    <p class="card-text small text-muted mb-0">Professional Electrical Installation and Maintenance</p>
-                                </div>
-                            </div>
-                        </div>
+    <!-- Cards Row - Bigger Text Throughout -->
+    <div class="row g-4 g-md-5 justify-content-center"> <!-- More spacing between cards -->
+        <!-- electric -->
+        <div class="col-6 col-md-3 d-flex justify-content-center">
+            <div class="card service-card shadow-sm border-0 text-center h-100" style="width: 100%; max-width: 280px;"> <!-- Wider cards -->
+                <div class="card-body p-4"> <!-- More padding -->
+                    <img src="{% static 'assets/img/handyman/electric.png' %}" class="service-logo mb-3" alt="Haulage" style="width: 70px; height: 70px;"> <!-- Bigger icon -->
+                    <h5 class="card-title mb-3" style="font-size: 1.5rem;">Electrical Services </h5> <!-- Much larger title -->
+                    <p class="card-text  mb-0" style="font-size: 2rem; line-height: 1.4; color: #343635"> <!-- Bigger description -->
+                        Safe and efficient power solutions
 
-                        <!-- Warehouse Card -->
-                        <div class="col-6 col-md-3">
-                            <div class="card service-card shadow-sm border-0 text-center h-100">
-                                <div class="card-body p-2 p-sm-3 p-lg-4">
-                                    <img src="{% static 'assets/img/handyman/aircon.png' %}" class="service-logo mb-2 mb-md-3" alt="Warehouse logo">
-                                    <h6 class="card-title mb-1 mb-md-2">Air-Condition Service</h6>
-                                    <p class="card-text small text-muted mb-0">Expert AC installation and maintenance</p>
-                                </div>
-                            </div>
-                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
 
-                        <!-- Procurement Card -->
-                        <div class="col-6 col-md-3">
-                            <div class="card service-card shadow-sm border-0 text-center h-100">
-                                <div class="card-body p-2 p-sm-3 p-lg-4">
-                                    <img src="{% static 'assets/img/handyman/fumigation.png' %}" class="service-logo mb-2 mb-md-3" alt="Procurement logo">
-                                    <h6 class="card-title mb-1 mb-md-2">Fumigation</h6>
-                                    <p class="card-text small text-muted mb-0">Professional pest control and disinfection</p>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Air-condition Services -->
+        <div class="col-6 col-md-3 d-flex justify-content-center">
+            <div class="card service-card shadow-sm border-0 text-center h-100" style="width: 100%; max-width: 280px;">
+                <div class="card-body p-4">
+                    <img src="{% static 'assets/img/handyman/aircon.png' %}" class="service-logo mb-3" alt="Warehousing" style="width: 70px; height: 70px;">
+                    <h5 class="card-title mb-3" style="font-size: 1.5rem;">Air-condition Services
+</h5>
+                    <p class="card-text  mb-0" style="font-size: 2rem; color: #343635; line-height: 1.4;">
+                        Reliable cooling system maintenance
 
-                        <!-- Project Management Card -->
-                        <div class="col-6 col-md-3">
-                            <div class="card service-card shadow-sm border-0 text-center h-100">
-                                <div class="card-body p-2 p-sm-3 p-lg-4">
-                                    <img src="{% static 'assets/img/handyman/plumbing.png' %}" class="service-logo mb-2 mb-md-3" alt="Project Management logo">
-                                    <h6 class="card-title mb-1 mb-md-2">Plumbing</h6>
-                                    <p class="card-text small text-muted mb-0">Professional plumbing solutions and repairs</p>
-                                </div>
-                            </div>
-                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
 
-                       <!-- Project Management Card -->
-                        <div class="col-6 col-md-3">
-                            <div class="card service-card shadow-sm border-0 text-center h-100">
-                                <div class="card-body p-2 p-sm-3 p-lg-4">
-                                    <img src="{% static 'assets/img/handyman/tiling.png' %}" class="service-logo mb-2 mb-md-3" alt="Project Management logo">
-                                    <h6 class="card-title mb-1 mb-md-2">Tiling and Painting</h6>
-                                    <p class="card-text small text-muted mb-0">Precision floor/wall tiling • Professional interior/exterior painting</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Fumigation Services
+ -->
+        <div class="col-6 col-md-3 d-flex justify-content-center">
+            <div class="card service-card shadow-sm border-0 text-center h-100" style="width: 100%; max-width: 280px;">
+                <div class="card-body p-4">
+                    <img src="{% static 'assets/img/handyman/fumigation.png' %}" class="service-logo mb-3" alt="Procurement" style="width: 70px; height: 70px;">
+                    <h5 class="card-title mb-3" style="font-size: 1.5rem;">Fumigation</h5>
+                    <p class="card-text  mb-0" style="font-size: 2rem; line-height: 1.4; color: #343635; ">
+                        Effective pest and insect control
 
-                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Plumbing Services -->
+        <div class="col-6 col-md-3 d-flex justify-content-center">
+            <div class="card service-card shadow-sm border-0 text-center h-100" style="width: 100%; max-width: 280px;">
+                <div class="card-body p-4">
+                    <img src="{% static 'assets/img/handyman/plumbing.png' %}" class="service-logo mb-3" alt="Project Management" style="width: 70px; height: 70px;">
+                    <h5 class="card-title mb-3" style="font-size: 1.5rem;">Plumbing</h5>
+                    <p class="card-text  mb-0" style="font-size: 2rem; line-height: 1.4; color: #343635; ">
+                        Fast and reliable plumbing solutions
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Project Management Card -->
+        <div class="col-6 col-md-3 d-flex justify-content-center" > <!-- style="margin-right: 18rem" -->
+            <div class="card service-card shadow-sm border-0 text-center h-100" style="width: 100%; max-width: 280px;">
+                <div class="card-body p-4">
+                    <img src="{% static 'assets/img/handyman/capentry.png' %}" class="service-logo mb-3" alt="Project Management" style="width: 70px; height: 70px;">
+                    <h5 class="card-title mb-3" style="font-size: 1.5rem;">Carpentry Services</h5>
+                    <p class="card-text  mb-0" style="font-size: 2rem; line-height: 1.4; color: #343635; ">
+                        Custom woodwork and repairs
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tiling and Painting -->
+        <div class="col-6 col-md-3 d-flex justify-content-center" > <!-- style="margin-right: 18rem" -->
+            <div class="card service-card shadow-sm border-0 text-center h-100" style="width: 100%; max-width: 280px;">
+                <div class="card-body p-4">
+                    <img src="{% static 'assets/img/handyman/tiling.png' %}" class="service-logo mb-3" alt="Project Management" style="width: 70px; height: 70px;">
+                    <h5 class="card-title mb-3" style="font-size: 1.5rem;">Tiling and Painting
+</h5>
+                    <p class="card-text  mb-0" style="font-size: 2rem; line-height: 1.4; color: #343635; ">
+                        Expert tiling and painting services
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
                         <br>
-                        <div style="margin-top: 4rem"></div>
                         <!-- end top logo -->
 
                 <!-- Plumber -->
                 <div class="row mb-5">
                     <div class="col-12 text-center mb-5">
-                        <h2 class="section-title">Plumbing</h2>
+                        <h2 class="section-title">Excerpts</h2>
                         <div class="divider mx-auto"></div>
                     </div>
 
@@ -127,7 +182,7 @@
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="service-card card h-100 border-0 shadow-sm hover-effect">
                             <div class="card-img-top overflow-hidden">
-                                <img src="{% static 'assets/img/handyman/plum1.jpeg' %}" alt="Architectural Design" class="img-fluid zoom-effect">
+                                <img src="{% static 'assets/hpics/2.jpg' %}" alt="image" class="img-fluid zoom-effect">
                             </div>
                             <div class="card-body">
 
@@ -140,7 +195,7 @@
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="service-card card h-100 border-0 shadow-sm hover-effect">
                             <div class="card-img-top overflow-hidden">
-                                <img src="{% static 'assets/img/handyman/plum2.jpeg' %}" alt="Road Construction" class="img-fluid zoom-effect">
+                                <img src="{% static 'assets/hpics/7.jpg' %}" alt="image" class="img-fluid zoom-effect">
                             </div>
                             <div class="card-body">
 
@@ -153,7 +208,7 @@
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="service-card card h-100 border-0 shadow-sm hover-effect">
                             <div class="card-img-top overflow-hidden">
-                                <img src="{% static 'assets/img/handyman/plum3.jpeg' %}" alt="Quantity Surveying" class="img-fluid zoom-effect">
+                                <img src="{% static 'assets/hpics/1.jpg' %}" alt="image" class="img-fluid zoom-effect">
                             </div>
                             <div class="card-body">
 
@@ -163,89 +218,9 @@
                     </div>
                 </div>
 
-                <!-- Home and Office -->
-                <div class="row mb-5">
-                    <div class="col-12 text-center mb-5">
-                        <h2 class="section-title">Carpentry</h2>
-                        <div class="divider mx-auto"></div>
-                    </div>
-
-                        <!-- Home 1 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="service-card card h-100 border-0 shadow-sm hover-effect">
-                            <div class="card-img-top overflow-hidden">
-                                <img src="{% static 'assets/img/handyman/wood1.jpeg' %}" alt="Tower Fabrication" class="img-fluid zoom-effect">
-                            </div>
-                            <div class="card-body">
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Home 2 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="service-card card h-100 border-0 shadow-sm hover-effect">
-                            <div class="card-img-top overflow-hidden">
-                                <img src="{% static 'assets/img/handyman/wood2.jpeg' %}" alt="Cell Site" class="img-fluid zoom-effect">
-                            </div>
-                            <div class="card-body">
-                                 </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Home 3 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="service-card card h-100 border-0 shadow-sm hover-effect">
-                            <div class="card-img-top overflow-hidden">
-                                <img src="{% static 'assets/img/handyman/wood3.jpeg' %}" alt="Telecom Power" class="img-fluid zoom-effect">
-                            </div>
-                            <div class="card-body">
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- end Home and Office -->
-
-                <!-- Building & Civil Construction -->
-                <div class="row mb-5">
-                    <div class="col-12 text-center mb-5">
-                        <h2 class="section-title">Electrical works</h2>
-                        <div class="divider mx-auto"></div>
-                    </div>
-
-                        <!-- Home 1 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="service-card card h-100 border-0 shadow-sm hover-effect">
-                            <div class="card-img-top overflow-hidden">
-                                <img src="{% static 'assets/img/handyman/elec1.jpeg' %}" alt="Tower Fabrication" class="img-fluid zoom-effect">
-                            </div>
-                            <div class="card-body">
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Home 2 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="service-card card h-100 border-0 shadow-sm hover-effect">
-                            <div class="card-img-top overflow-hidden">
-                                <img src="{% static 'assets/img/handyman/elec2.jpeg' %}" alt="Cell Site" class="img-fluid zoom-effect">
-                            </div>
-                            <div class="card-body">
-
-                            </div>
-
-                        </div>
-                    </div>
 
 
-                </div>
-                <!-- end Home and Office -->
+
 
 
 

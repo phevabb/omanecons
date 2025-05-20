@@ -23,6 +23,8 @@
     <orderEntry type="library" name="animejs" level="application" />
     <orderEntry type="library" name="@tailwindcss" level="application" />
     <orderEntry type="library" name="sweetalert2" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="flexslider" level="application" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />
