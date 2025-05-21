@@ -140,3 +140,7 @@ EMAIL_PORT = 465
 EMAIL_USE_SSL = True
 
 
+
+
+MEDIA_URL='/images/'
+MEDIA_ROOT=os.path.join(BASE_DIR,'media')

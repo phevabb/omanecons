@@ -2,10 +2,12 @@
 from django.core.mail import EmailMessage
 from django.core.mail import BadHeaderError
 from smtplib import SMTPException
+
+from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import ContactForm
-
+from appone.models import *
 def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
@@ -62,13 +64,37 @@ def index2(request):
     return render(request, 'index2.html')
 
 
+
+
+
 def enginepics(request):
-    return render(request, 'enginepics.html')
+    total_pics=Engine.objects.all()
+    paginator_first_6 = Paginator(total_pics, 6)
+    page = request.GET.get("page", 1)
+    paged_pics = paginator_first_6.get_page(page)
+    number_of_pics = total_pics.count()
+    context = {"number_of_pics": number_of_pics, "total_pics": paged_pics,}
+    return render(request, 'enginepics.html', context)
+
 
 
 def handymanpics(request):
-    return render(request, 'handymanpics.html')
+    total_pics=Handyman.objects.all()
+    paginator_first_6 = Paginator(total_pics, 6)
+    page = request.GET.get("page", 1)
+    paged_pics = paginator_first_6.get_page(page)
+    number_of_pics = total_pics.count()
+    context = {"number_of_pics": number_of_pics, "total_pics": paged_pics,}
+    return render(request, 'handymanpics.html', context)
+
+
 
 
 def logisticpics(request):
-    return render(request, 'logisticpics.html')
+    total_pics=Logistic.objects.all()
+    paginator_first_6 = Paginator(total_pics, 6)
+    page = request.GET.get("page", 1)
+    paged_pics = paginator_first_6.get_page(page)
+    number_of_pics = total_pics.count()
+    context = {"number_of_pics": number_of_pics, "total_pics": paged_pics,}
+    return render(request, 'logisticpics.html', context)

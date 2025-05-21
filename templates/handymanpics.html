@@ -41,222 +41,36 @@
 
                                         <div id="projects" class="cbp">
 
-
-                                            <div class="cbp-item  ">
+                                              {% for pic in total_pics %}
+                                            <div class="cbp-item">
                                                 <div class="project-item">
                                                     <div class="inner">
                                                         <div class="grid">
-                                                        <figure class="effect-sadie">
-                                                            <img src="{% static 'assets/hpics/8.jpg' %}" alt="image" />
-                                                            <figcaption>
-                                                                <div>
-
-                                                                </div>
-                                                            </figcaption>
-                                                        </figure>
+                                                            <figure class="effect-sadie">
+                                                                <img src="{{ pic.image.url }}" alt="image" />
+                                                                <figcaption>
+                                                                    <div>
+                                                                        <!-- Optional caption -->
+                                                                    </div>
+                                                                </figcaption>
+                                                            </figure>
                                                         </div>
 
-                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/hpics/8.jpg' %}" >
+                                                        <a class="project-zoom cbp-lightbox" href="{{ pic.image.url }}">
                                                             <i class="fa fa-arrows-alt"></i>
                                                         </a>
                                                     </div>
                                                 </div>
                                             </div><!--/.cbp-item -->
-
-                                            <div class="cbp-item  ">
-                                                <div class="project-item">
-                                                    <div class="inner">
-                                                        <div class="grid">
-                                                        <figure class="effect-sadie">
-                                                            <img src="{% static 'assets/hpics/9.jpg' %}" alt="image" />
-                                                            <figcaption>
-                                                                <div>
-
-                                                                </div>
-                                                            </figcaption>
-                                                        </figure>
-                                                        </div>
-
-                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/hpics/9.jpg' %}" >
-                                                            <i class="fa fa-arrows-alt"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div><!--/.cbp-item -->
-
-                                            <div class="cbp-item  ">
-                                                <div class="project-item">
-                                                    <div class="inner">
-                                                        <div class="grid">
-                                                        <figure class="effect-sadie">
-                                                            <img src="{% static 'assets/hpics/10.jpg' %}" alt="image" />
-                                                            <figcaption>
-                                                                <div>
-
-                                                                </div>
-                                                            </figcaption>
-                                                        </figure>
-                                                        </div>
-
-                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/hpics/10.jpg' %}" >
-                                                            <i class="fa fa-arrows-alt"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div><!--/.cbp-item -->
-
-                                           <div class="cbp-item  ">
-                                                <div class="project-item">
-                                                    <div class="inner">
-                                                        <div class="grid">
-                                                        <figure class="effect-sadie">
-                                                            <img src="{% static 'assets/hpics/1.jpg' %}" alt="image" />
-                                                            <figcaption>
-                                                                <div>
-
-                                                                </div>
-                                                            </figcaption>
-                                                        </figure>
-                                                        </div>
-
-                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/hpics/1.jpg' %}" >
-                                                            <i class="fa fa-arrows-alt"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div><!--/.cbp-item -->
-
-                                           <div class="cbp-item  ">
-                                                <div class="project-item">
-                                                    <div class="inner">
-                                                        <div class="grid">
-                                                        <figure class="effect-sadie">
-                                                            <img src="{% static 'assets/hpics/2.jpg' %}" alt="image" />
-                                                            <figcaption>
-                                                                <div>
-
-                                                                </div>
-                                                            </figcaption>
-                                                        </figure>
-                                                        </div>
-
-                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/hpics/2.jpg' %}" >
-                                                            <i class="fa fa-arrows-alt"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div><!--/.cbp-item -->
-
-                                           <div class="cbp-item  ">
-                                                <div class="project-item">
-                                                    <div class="inner">
-                                                        <div class="grid">
-                                                        <figure class="effect-sadie">
-                                                            <img src="{% static 'assets/hpics/3.jpg' %}" alt="image" />
-                                                            <figcaption>
-                                                                <div>
-
-                                                                </div>
-                                                            </figcaption>
-                                                        </figure>
-                                                        </div>
-
-                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/hpics/3.jpg' %}" >
-                                                            <i class="fa fa-arrows-alt"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div><!--/.cbp-item -->
-
-                                            <div class="cbp-item  ">
-                                                <div class="project-item">
-                                                    <div class="inner">
-                                                        <div class="grid">
-                                                        <figure class="effect-sadie">
-                                                            <img src="{% static 'assets/hpics/4.jpg' %}" alt="image" />
-                                                            <figcaption>
-                                                                <div>
-
-                                                                </div>
-                                                            </figcaption>
-                                                        </figure>
-                                                        </div>
-
-                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/hpics/4.jpg' %}" >
-                                                            <i class="fa fa-arrows-alt"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div><!--/.cbp-item -->
-
-                                            <div class="cbp-item  ">
-                                                <div class="project-item">
-                                                    <div class="inner">
-                                                        <div class="grid">
-                                                        <figure class="effect-sadie">
-                                                            <img src="{% static 'assets/hpics/5.jpg' %}" alt="image" />
-                                                            <figcaption>
-                                                                <div>
-
-                                                                </div>
-                                                            </figcaption>
-                                                        </figure>
-                                                        </div>
-
-                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/hpics/5.jpg' %}" >
-                                                            <i class="fa fa-arrows-alt"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div><!--/.cbp-item -->
-
-                                            <div class="cbp-item  ">
-                                                <div class="project-item">
-                                                    <div class="inner">
-                                                        <div class="grid">
-                                                        <figure class="effect-sadie">
-                                                            <img src="{% static 'assets/hpics/6.jpg' %}" alt="image" />
-                                                            <figcaption>
-                                                                <div>
-
-                                                                </div>
-                                                            </figcaption>
-                                                        </figure>
-                                                        </div>
-
-                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/hpics/6.jpg' %}" >
-                                                            <i class="fa fa-arrows-alt"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div><!--/.cbp-item -->
-
-                                            <div class="cbp-item  ">
-                                                <div class="project-item">
-                                                    <div class="inner">
-                                                        <div class="grid">
-                                                        <figure class="effect-sadie">
-                                                            <img src="{% static 'assets/hpics/7.jpg' %}" alt="image" />
-                                                            <figcaption>
-                                                                <div>
-
-                                                                </div>
-                                                            </figcaption>
-                                                        </figure>
-                                                        </div>
-
-                                                        <a class="project-zoom cbp-lightbox" href="{% static 'assets/hpics/7.jpg' %}" >
-                                                            <i class="fa fa-arrows-alt"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div><!--/.cbp-item -->
+                                        {% endfor %}
 
                                         </div><!-- /#projects -->
                                     </div><!--/.wprt-project -->
                                 </div><!-- /.col-md-12 -->
 
                                 <div style="margin-top: 2rem">
+
+                                    {% include "pagination.html" with page=total_pics %}
 
                                 </div><!-- /.col-md-12 -->
 
