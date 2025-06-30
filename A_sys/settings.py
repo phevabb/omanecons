@@ -28,7 +28,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
-PREPEND_WWW = True  # Forces www
+#PREPEND_WWW = True  # Forces www
 
 # Application definition
 SITE_ID = 1
