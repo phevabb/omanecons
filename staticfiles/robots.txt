@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /          # Allows crawling of all pages
+Disallow: /admin/ # Blocks search engines from admin pages
+Disallow: /private/ # Add other private paths if needed
+
+# Sitemap URL (MUST match your live domain)
+Sitemap: https://www.kkagroup.africa/sitemap.xml

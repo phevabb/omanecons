@@ -98,3 +98,18 @@ def logisticpics(request):
     number_of_pics = total_pics.count()
     context = {"number_of_pics": number_of_pics, "total_pics": paged_pics,}
     return render(request, 'logisticpics.html', context)
+
+from django.shortcuts import render, get_object_or_404
+from .models import Engine, Logistic, Handyman
+
+def engine_detail(request, pk):
+    engine = get_object_or_404(Engine, pk=pk)
+    return render(request, 'engine_detail.html', {'engine': engine})
+
+def logistic_detail(request, pk):
+    logistic = get_object_or_404(Logistic, pk=pk)
+    return render(request, 'logistic_detail.html', {'logistic': logistic})
+
+def handyman_detail(request, pk):
+    handyman = get_object_or_404(Handyman, pk=pk)
+    return render(request, 'handyman_detail.html', {'handyman': handyman})
