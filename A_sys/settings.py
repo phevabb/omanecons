@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
-
+import cloudinary_storage
 from pathlib import Path
 import os
 
@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-5r0!-zlp$c)d8lrsr#o&1c&k4fnx)xarx=m(n@$d@m9(e1uodh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -46,6 +46,8 @@ INSTALLED_APPS = [
 
     # third party
     'widget_tweaks',
+    'cloudinary',
+    'cloudinary_storage',
 
 
     #local
@@ -80,6 +82,8 @@ TEMPLATES = [
         },
     },
 ]
+
+
 
 WSGI_APPLICATION = 'A_sys.wsgi.application'
 
@@ -153,3 +157,12 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 MEDIA_URL='/images/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
+
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dshe6c8db',
+    'API_KEY': '213798122585258',
+    'API_SECRET': 'ItL4DmcjTlTtAbdffHgwOrxBLPA',
+}
