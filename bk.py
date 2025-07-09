@@ -1,7 +1,7 @@
 import os
 import django
 
-# Set the Django settings module (replace 'yourproject' with your actual project name)
+
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'A_sys.settings')
 django.setup()
 
